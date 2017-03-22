@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Aref+Ruqaa|Cinzel|Cookie|Monoton|Poiret+One|Unica+One" rel="stylesheet">
-  <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />--> <!-- THE ICON ON TOP OF THE WEBSITE TAB IN CHROME "FAVICON"-->
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Aref+Ruqaa|Cinzel|Cookie|Monoton|Open+Sans|Poiret+One|Unica+One" rel="stylesheet">  <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />--> <!-- THE ICON ON TOP OF THE WEBSITE TAB IN CHROME "FAVICON"-->
   <style>
     #container{
       width: 100%;
@@ -134,7 +133,7 @@
       top: 450px;
       text-align: center;
       background: url("images/piano.jpg");
-      background-blend-mode:color;
+      background-repeat: no-repeat;
     }
     #pianotitle{
       color: white;
@@ -156,11 +155,55 @@
       position: relative;
       top: -10%;
     }
+
+    .navigationbar{
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      margin: 0; padding: 0;
+    }
+    .navigationbar ul{
+      list-style-type: none;
+      margin: 0; padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      height: 50px;
+    }
+    .navigationbar li{
+      float: left;
+      font-family: 'Open Sans';
+    }
+    .navigationbar li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .navigationbar li a:hover{
+      background-color: #111;
+    }
+
+.active {
+    background-color: #4CAF50;
+}
   </style>
 </head>
 
 <body>
   <div id="container">
+
+    <div class="navigationbar">
+
+      <ul>
+        <li><a href="#header">HOME</a></li>
+        <li><a href="#bio">ABOUT</a></li>
+        <li><a href="#piano">MUSICIAN</a></li>
+        <li style="float:right"><a href="">CONTACT</a></li>
+      </ul>
+
+    </div>
+
 
     <div id="header">
 
@@ -182,7 +225,7 @@
 
     <div class="break"></div>
 
-    <div class="bio">
+    <div class="bio" id="bio">
       <img src="images/me3.png" alt="silhouette" id="biopic">
       <h1 id="biotitle"> The Awesome-st person!</h1>
       <!--<p id="biotext"> Robert is the best person in the whole Universe, bla js fohsd kgjhkjh sdlg nldk sdlj ;d jd fkkj kk skjfh ;jhf djf ;df ;df stupid potato head ljdhkjf ;hkjh kjsdn.v mnl kj;f jad;slfk ja;sljfh .,dbf,msdb f.kajb.dkafjn. kajsdb.fk jbsd.Robert is the best person in the while Universe, bla js fohsd kgjhkjh sdlg nldk sdlj ;d jd fkkj kk skjfh ;jhf djf ;df ;df stupid potato head ljdhkjf ;hkjh kjsdn.v mnl kj;f jad;slfk ja;sljfh .,dbf,msdb f.kajb.dkafjn. kajsdb.fk jbsd.</p>-->
@@ -191,13 +234,15 @@
 
     <div class="break"></div>
 
-    <div class="piano">
+    <div class="piano" id="piano">
       <h1 id="pianotitle">MUSICIAN</h1>
 
       <div class="break"></div>
 
       <p id="pianotext">"They say that Mozart started playing music at the age of 3, well Robert started playing music when he was 3 months in his mother's womb using the umbilical chords, later on he'd go to be the mentor of Yanni and Omar khirat so they can achieve their dreams."</p>
     </div>
+
+    <div class="break"></div>
 
 
 
