@@ -19,7 +19,17 @@
       background-color: #a57c80;
       background-image: url("images/back3.png");
       background-size: 100%;
+      text-align: center;
      }
+    #headerimage{
+      padding: 0; margin:0;
+      width: 80px; height: 80px;
+      position: relative;
+      top: -15px;
+      border-radius: 50%;
+      border: 3px solid grey;
+
+    }
     .social{
       width:25px;
       padding-top:250px;
@@ -34,12 +44,13 @@
       left:90%;
     }
     #name{
+      padding: 0;margin: 0;
       color: white;
       font-family: 'Alfa Slab One';
       font-size: 80px;
       text-align: center;
       position: relative;
-      top: 20px;
+      top: 30%;
     }
     /*.fixedwidth{
       width: 1000px;
@@ -54,7 +65,7 @@
       font-size: 40px;
       text-align: center;
       position: relative;
-      top: -10%;
+      top: -25%;
     }
     .gallery{
       text-align: center;
@@ -86,40 +97,65 @@
       height:400px;
       position: relative;
       top: 350px;
-      left: ;
+      float: left;
     }
     #biotitle{
-      margin: 0; padding: 0;
       font-family: 'Poiret One', cursive;
       font-weight: lighter;
-      font-size: 50px;
-      position: relative;
-      top: 400px;
       color: #263238;
-    }
+      font-size: 50px;
+      border-bottom: 2px dashed grey;
+
+      position: relative;
+      float: right;
+      top: 370px;
+      right: 90px;
+   }
     #biotext{
       font-family: monospace;
-      position: relative;
       font-weight: lighter;
       font-size: 15px;
       color: #455A64;
-      top: 450px;
+
+      position: relative;
+      float: right;
+      width: 500px;
+      text-align: left;
+      top: 400px;
+      right: 90px;
     }
     .break{
       clear: both;
     }
     .piano{
       width: 100%;
+      height: 400px;
       position: relative;
-      top: 500px;
+      top: 450px;
       text-align: center;
+      background: url("images/piano.jpg");
+      background-blend-mode:color;
     }
-    #pianopic{
-      text-align: center;
-      width: 100%;
-      background-size: auto;
+    #pianotitle{
+      color: white;
+      font-family: 'Alfa Slab One';
+      font-size: 90px;
+      float: left;
+      padding-left: 10%;
     }
+    #pianotext{
+      font-family: monospace;
+      font-weight: lighter;
+      font-size: 15px;
+      color: #90A4AE;
 
+      float: left;
+      width: 500px;
+      text-align:left;
+      padding-left: 10%;
+      position: relative;
+      top: -10%;
+    }
   </style>
 </head>
 
@@ -130,7 +166,8 @@
 
       <!--<a href="https://www.facebook.com/robertashraff"><img src="fb.png" class="social" id="fb" target="_blank"></a>
       <a href="https://twitter.com/Robert_Achraf"><img src="Twitter.png" class="social" id="tw" target="_blank"></a>-->
-      <h1 id="name">ROBERT MAKAR</h1>
+      <h1 id="name">ROBERT* MAKAR</h1>
+      <img src="images/headerimage.jpg" alt="Robert Makar" id="headerimage">
       <h4 class="status">وَجدْنَا فِي الحُب أسَاسَ الحَياةِ</h4>
     </div>
 
@@ -155,7 +192,11 @@
     <div class="break"></div>
 
     <div class="piano">
-      <img src="images/piano.jpg" alt="piano" id="pianopic">
+      <h1 id="pianotitle">MUSICIAN</h1>
+
+      <div class="break"></div>
+
+      <p id="pianotext">Robert is the awseome-st person in the world. At the age of 5, Robert started walking on the surface of the sun barefooted, at his teenage he dated Jennifer aniston and angelina jolie at the same time, later on he'd go and take a trip around the universe in 80 days.</p>
     </div>
 
 
