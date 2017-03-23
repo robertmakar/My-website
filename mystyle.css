@@ -1,11 +1,11 @@
 
   #container{
     width: 100%;
+    text-align: center;
   }
   body{
-    padding: 0;
+    padding: 0;margin: 0;
     background-color: #eee;
-    margin: 0;
   }
   #header{
     position: absolute;
@@ -51,7 +51,7 @@
   .gallery{
     text-align: center;
     top: 150px;
-    padding-top: 5%;
+    padding-top: 3%;
   }
   #cat{
     position:relative;
@@ -67,6 +67,38 @@
     top: 300px;
     position: relative;
     height: 204px;
+  }
+  .photography{
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  #photographybackground{
+    width: 100%;
+    position: relative;
+    top: 335px;
+  }
+  #photographytitle{
+    font-family:'VT323';
+    color: white;
+    font-weight: lighter;
+    font-size: 75px;
+    position:absolute;
+    text-align: center;
+    width: 650px;
+    left: 25%;
+    top: 70%;
+  }
+  #photographytext{
+    font-family:'Josefin Sans';
+    color: #B0BEC5;
+    font-weight: lighter;
+    font-size: 15px;
+    position:absolute;
+    text-align: center;
+    width: 650px;
+    left: 25%;
+    top: 100%;
   }
   .bio{
     padding: 0 10% 0 10%;
@@ -108,7 +140,7 @@
     width: 100%;
     height: 400px;
     position: relative;
-    top: 450px;
+    top: 400px;
     text-align: center;
     background: url("images/piano.jpg");
     background-repeat: no-repeat;
