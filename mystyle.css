@@ -62,15 +62,29 @@
   }
   #characterpic{
     transform: scale(0.3);
-    top: -50px;
+    top: -380px;
+    left: 300px;
 
     position: relative;
   }
   #charactertext{
+    font-family: monospace;
+    text-align: left;
+    font-size: 15px;
+    left: 150px;
     color: black;
-    position: relative; 
-    width: 300px;
+    position: relative; top:-1000px;
+    width: 600px;
     z-index: 1;
+  }
+  #charactertitle{
+    font-family: 'Lobster';
+    text-align: left;
+    font-size: 70px;
+    left: 150px;
+    color: black;
+    position: absolute; top: 100px;
+    width: 600px;
   }
   #cat{
     position:relative;
