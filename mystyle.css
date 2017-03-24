@@ -53,6 +53,25 @@
     top: 150px;
     padding-top: 3%;
   }
+  .characterintro{
+    width: 100%; height: 500px;
+    position: relative; top: 300px;
+    text-align: center;
+    padding: 0; margin: 0;
+    background-color: #eee;
+  }
+  #characterpic{
+    transform: scale(0.3);
+    top: -50px;
+
+    position: relative;
+  }
+  #charactertext{
+    color: black;
+    position: relative; 
+    width: 300px;
+    z-index: 1;
+  }
   #cat{
     position:relative;
     top: 300px;
